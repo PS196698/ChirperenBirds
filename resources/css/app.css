@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+body {
+    @apply h-screen;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply bg-gray-100;
+}
+
+h1 {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply mb-4;
+}
+
+/* Table Styles */
+
+.table-auto {
+    @apply w-full;
+    @apply border-collapse;
+    @apply shadow-md;
+}
+
+.table-auto th, .table-auto td {
+    @apply border;
+    @apply border-gray-200;
+    @apply px-4;
+    @apply py-2;
+    @apply text-left;
+}
+
+.table-auto th {
+    @apply bg-gray-200;
+    @apply text-gray-600;
+    @apply font-bold;
+}
+
+.table-auto tr:nth-child(even) {
+    @apply bg-gray-100;
+}
+
+/* Button Styles */
+
+.bg-orange-500 {
+    @apply hover:bg-orange-700;
+    @apply text-white;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+    @apply shadow-md;
+}
+
+.bg-red-500 {
+    @apply hover:bg-red-700;
+    @apply text-white;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+    @apply shadow-md;
+}
+
+/* Pagination Styles */
+
+.pagination {
+    @apply flex;
+    @apply justify-center;
+    @apply mt-4;
+}
+
+.pagination > * {
+    @apply mx-2;
+}
